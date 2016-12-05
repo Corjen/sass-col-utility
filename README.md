@@ -3,6 +3,13 @@ Sass col utility
 
 This is a small sass utility for easily creating sized cols in a flexbox grid. It uses Zurb's foundation breakpoint function, with a set of size classes.
 
+If your using the ITCSS principle, just copy and past this in your scss or sass folder. Ensure to include the folders in the following order:
+- settings
+- tools/functions
+- tools/mixins
+- trumps
+
+
 ####settings/variables/_breakpoints.scss
 Contains a sass map with breakpoint values:
 
@@ -37,7 +44,7 @@ Contains the actual breakpoint mixin. A couple of usage examples:
 
 ###trumps/utils/_u-col-size.scss
 
-Enable the used classes by settings these variables to true or false
+Enable the printed classes by settings these variables to true or false
 ```scss
 $include-1-2-up: true;
 $include-1-2-only: true;
